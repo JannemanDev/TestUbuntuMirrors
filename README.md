@@ -42,7 +42,7 @@ Copyright (C) 2023 TestUbuntuMirrors
   --version                                   Display version information.
 ```
 
-When you program runs you can:  
+When the program runs you can:  
 -pause by pressing [SPACE]  
 -quit by pressing [ESCAPE]
 
@@ -64,18 +64,18 @@ You can also supply your own list of working mirrors by specifying a text file w
 ./test-mirrors-with-netselect.sh mymirrors.txt
 ```
 
-3. To update your `/etc/apt/sources.list` with a new fast mirror which has packages avaialble for your distribution and architecture use:
+3. To update your `/etc/apt/sources.list` with a new fast mirror which has packages available for your distribution and architecture use:
 ```console
 ./replace-mirrors-in-apt-sources.sh https://mirror.kumi.systems/ubuntu-ports/
 ```
 
 
-If you want to find out which Linux Ubuntu package distribution you need you can use:
+If you want to find out which Linux Ubuntu package `distribution` you need you can use:
 ```console
 cat /etc/os-release | grep VERSION_CODENAME
 ```
 
-To check which Linux Ubuntu package architecture use:
+To check which Linux Ubuntu package `architecture` use:
 ```console
 uname -m -p -i
 ```
